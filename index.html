@@ -2,30 +2,60 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Sign Up Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"
+    
+    <title>Wicys At Illinois Tech Board Application</title>
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="screen.css">
   </head>
   <body>
-    <header> </header>
-    <div id="page-wrapper">
-      <main>
-      <h1><span></span></h1>
-      <p>🚨 WiCys IIT Student Chapter is Recruiting!! 🚨
-
-Since most of our team is graduating this semester, we’re looking for new leaders to continue our mission! If you’re passionate about cybersecurity and want to make an impact, this is your chance to join the WiCyS IIT Executive Board!
-
-📌 Apply now via the QR code or link in our bio!
-⏳ Deadline: April 5th
-
-Step up, lead, and help grow our community! 💻 🔐✨</p>
-      </main>
-     
-      
-      <nav>
-      <ul>
-        <
-  
-      
+    <header>
+      <h1>WiCys IIT Student Chapter is Recruiting!</h1>
+    </header>
+    <main>
+      <p>Hi Everyone! WiCyS is a national affiliate with the mission of bridging the gap for women in Cybersecurity. Our goal is to recruit, retain, and advance women in the field. We have a large and powerful network and joining the executive board of the Illinois Tech chapter will put you in the ranks of the women leaders of tomorrow. We want you to help us carry our mission and vision forward! If you want to be a part of our fast paced team, please fill out the form below. We are looking for people who are ready to take charge and who are interested in collaborating with our members to plan engaging and fun events for our organization. We are looking for you! </p>
+    <form action="#null" method="POST" autocomplete="on">
+      <fieldset>
+      <legend>Application Form</legend>
+        <div>
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first_name" required>
+        
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last_name" required>
+        
+        <label for="email">Hawk Email</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="major">Major</label>
+        <input type="text" id="major" name="major" required>        
+        
+        <label for= "school-year">School Year</label>
+        <select id= "school-year" name="school-year" required>
+            <option value="Freshman">Freshman</option>
+            <option value="Sophomore">Sophomore</option>
+            <option value="Junior">Junior</option>
+            <option value="Senior">Senior</option>
+        </select>
+        
+        <label for= "position-choice">Which position are you applying for?</label>
+        <select id= "position-choice" name="position-choice" required>
+            <option value="Vice President">Vice President</option>
+            <option value="Treasure">Treasure</option>
+            <option value="Secretary">Secretary</option>
+            <option value="Marketing Executive">Marketing Executive</option>
+            <option value="Social Media Executive">Social Media Executive</option>
+            <option value="Events Committe">Events Committe</option>
+        </select>
+        
+        <label for="position-choice-reason">Major</label>
+        <textarea id="position-choice-reason" name="position-choice-reason" rows="3" required></textarea>
+        
+        <label for="interest">Why are you interested in joining our Exec Board?</label>
+        <textarea id="text" id="interest" name="interest" rows="3" required></textarea>   
+        
+        <button type="submit">Submit Application</button>
+    </form>    
+             
   </body>  
 </html>  
