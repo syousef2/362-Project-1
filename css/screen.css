@@ -115,10 +115,12 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 8px;
-  background-color: 
+  background-color: #2e8b57;
+  color: white;
+  font-weight: bold;
   
 }  
     
 button:hover {
-  background-color:   
+  background-color: #246b44;  
   
