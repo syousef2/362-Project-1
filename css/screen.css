@@ -10,7 +10,7 @@ button {
 
 input[type=text], input[type=email] {
   background-color: 
-  width: 100%;
+  width: 50;
   border: 1px solid #ccc;
   border-radius: 4px;
   color: white;
@@ -28,10 +28,9 @@ select {
 }  
 
 textarea {
-  background-color: purple;
-  width: 100%;
+  background-color: white;
   height: 100%;
-  padding: 12px 0;
+  padding: 12px;
   box-sizing: border-box;
   color: black;
   border-radius: 4px;
@@ -40,14 +39,18 @@ textarea {
 div {
   width: 100%;
   margin: 0 auto;
-]  
+}  
   
 
 body {
   font-family: Times New Roman, sans-serif;
-  padding: 20px;
-  margin: 0;
-  background: #f9f9f9;
+  line-height: 1.6;
+  padding: 32px;
+  margin: auto;
+  background-color: #e6e6fa;
+  color: #2e2e2e;
+  max-width: 800ox;
+  
 }
 
 main: {
@@ -61,26 +64,26 @@ main: {
 }  
 
 form {
-  position:
   max-width: 400px;
-  height:
-  margin: 0 auto;
-  padding: 24px;
+  padding: 32px;
   box-sizing: border-box;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   background: white;
-  border-radius: 8px;
+  border-radius: 12px;
   
 }  
 
 fieldset {
-  position:
+  border: none;
+  padding: 0;
 
 }
 
 legend {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
+  color: #2e8b57;
 }  
 
 
@@ -88,13 +91,14 @@ h1 {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 20px;
+  color: #4b0082;
   
   
 }
 
 label {
   display: inline-block;
-  color: 
+  color: #4682b4;
   margin-bottom: 5px;
   font-weight: bold;
   
