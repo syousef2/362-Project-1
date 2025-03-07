@@ -107,11 +107,10 @@ html [type="button"], /* 1 */
 /**
  * Remove the inner border and padding in Firefox.
  */
-
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+-moz-focus-inner,
+[type="button"]::,
+[type="reset"]::,
+[type="submit"]:: {
   border-style: none;
   padding: 0;
 }
@@ -120,10 +119,10 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+button:
+[type="button"]:,
+[type="reset"]:,
+[type="submit"]: {
   outline: 1px dotted ButtonText;
 }
 
@@ -186,8 +185,8 @@ textarea {
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type="number"]::,
+[type="number"]:: {
   height: auto;
 }
 
@@ -205,8 +204,8 @@ textarea {
  * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
  */
 
-[type="search"]::-webkit-search-cancel-button,
-[type="search"]::-webkit-search-decoration {
+[type="search"]::,
+[type="search"]:: {
   -webkit-appearance: none;
 }
 
@@ -215,7 +214,7 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 
-::-webkit-file-upload-button {
+:: {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
 }
