@@ -2,14 +2,14 @@ input,
 textarea,
 select,
 button {
-  width: 100%;
+  width: 90%;
   margin: 8px 0;
   padding: 12px;
   box-sizing: border-box;
 }
 
 input[type=text], input[type=email] {
-  width: 50%;
+  width: 90%;
   border: 1px solid #ccc;
   border-radius: 4px;
   color: black;
@@ -17,6 +17,62 @@ input[type=text], input[type=email] {
   margin: 8px 0;
   
 }  
+
+label {
+  display: block;
+  color: #2e8b57;
+  margin-bottom: 5px;
+  font-weight: bold;
+  
+}
+
+@media (min-width: 480px) {
+  form {
+    max-width: 450px;
+  }
+  
+  input[type=text], input[type=email] {
+    width: 90%;
+  }
+
+  textarea, select {
+    width: 100%;
+  }
+
+  main {
+    max-width: 650px;
+  } 
+
+  body {
+    max-width: 850px;
+  }
+  
+}
+
+
+@media (min-width: 992px) {
+  form {
+    max-width: 600px;
+    padding: 40px;
+  }
+  
+  input[type=text], input[type=email] {
+    width: 90%;
+  }
+
+  textarea, select {
+    width: 100%;
+  }
+
+  main {
+    max-width: 900px;
+  } 
+
+  body {
+    max-width: 1100px;
+  }
+}
+  
 
 form img {
   display: block;
@@ -36,7 +92,6 @@ select {
 
 textarea {
   background-color: white;
-  height: 100%;
   padding: 12px;
   box-sizing: border-box;
   color: black;
@@ -114,13 +169,7 @@ h1 {
   
 }
 
-label {
-  display: inline-block;
-  color: #2e8b57;
-  margin-bottom: 5px;
-  font-weight: bold;
-  
-}
+
 
 button {
   padding: 12px 18px;
@@ -140,50 +189,5 @@ button:hover {
 }  
   
   
-@media (min-width: 480px) {
-  form {
-    max-width: 450px;
-  }
-  
-  input[type=text], input[type=email] {
-    width: 60%;
-  }
 
-  textarea, select {
-    width: 100%;
-  }
-
-  main {
-    max-width: 650px;
-  } 
-
-  body {
-    max-width: 850px;
-  }
-}
-
-
-@media (min-width: 992px) {
-  form {
-    max-width: 600px;
-    padding: 40px;
-  }
-  
-  input[type=text], input[type=email] {
-    width: 80%;
-  }
-
-  textarea, select {
-    width: 100%;
-  }
-
-  main {
-    max-width: 900px;
-  } 
-
-  body {
-    max-width: 1100px;
-  }
-}
-  
   
